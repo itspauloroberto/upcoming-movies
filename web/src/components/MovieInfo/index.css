@@ -1,0 +1,98 @@
+.movie-info {
+  transition: all 1s ease-in-out;
+  width: calc(100vw + 50px);
+  left: -50px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+.movie-info .dark-overlay {
+  flex: 0.50 1;
+  background: linear-gradient(to right, #000 40%, #0000 100%);
+  padding: 25px 58px;
+  left: 50px;
+  position: relative;
+}
+
+.movie-info .close {
+  cursor: pointer;
+  padding: 15px;
+}
+
+.movie-info .dark-overlay .genres {
+  display: flex;
+  height: 24px;
+}
+
+.movie-info .dark-overlay > h1 {
+  padding: 0px !important;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.movie-info .dark-overlay .genres .genre-tag {
+  background: #0057FF;
+  border-radius: 4px;
+  padding: 0 7px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 5px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.movie-info .dark-overlay > p {
+  font-size: 20px;
+  text-align: left;
+  color: #929292;
+  margin-top: 53px;
+  max-width: 550px;
+  margin-bottom: 40px;
+}
+
+.movie-info .dark-overlay .general-info {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info .dark-overlay .general-info > div {
+  display: flex;
+  height: 75px;
+}
+.movie-info .dark-overlay .general-info > div small {
+  color: #444;
+}
+
+.movie-info .dark-overlay .general-info > div h3 {
+  color: #fff;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.movie-info .dark-overlay .general-info > div .calendar,
+.movie-info .dark-overlay .general-info > div .score,
+.movie-info .dark-overlay .general-info > div .flame {
+  margin-right: 20px;
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-info .dark-overlay .general-info > div .text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movie-info .dark-overlay .general-info > div h3,
+.movie-info .dark-overlay .general-info > div p {
+  margin-bottom: 0px;
+  color: #fff;
+}

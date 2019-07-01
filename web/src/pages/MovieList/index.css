@@ -1,0 +1,101 @@
+#MovieList.movies-wrapper {
+  background: #151515;
+  width: 100%;
+}
+#MovieList.movies-wrapper h1 {
+  color: #fff;
+  text-align: left;
+  font-size: 49px;
+  padding: 25px 0 0 50px;
+  margin-bottom: 9px;
+  line-height: 58px;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: 900;
+}
+
+#MovieList.movies-wrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 24px;
+}
+
+#MovieList.movies-wrapper .search-field {
+  position: relative;
+  display: block;
+  top: -7px;
+  border-radius: 4px;
+  font-family: 'Raleway';
+  border: none !important;
+}
+
+#MovieList.movies-wrapper .search-field:hover {
+  border: 1px solid rgb(221, 221, 221) !important;
+}
+
+#MovieList.movies-wrapper .search-field > .react-search-field-input {
+  transition: all 1s ease-in-out; 
+  background: transparent;
+  width: 0px;
+  padding: 0px !important;
+  color: #fff !important;
+}
+#MovieList.movies-wrapper .search-field .react-search-field-input:focus,
+#MovieList.movies-wrapper .search-field .react-search-field-input:active,
+#MovieList.movies-wrapper .search-field:hover .react-search-field-input {
+  width: 200px !important;
+  padding: 10px !important;
+}
+
+#MovieList.movies-wrapper .search-field > button {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+#MovieList.movies-wrapper .search-field:hover .react-search-field-button {
+  background-color: #fff; 
+}
+
+#MovieList.movies-wrapper .movie-card {
+  height: 500px;
+  position: relative;
+}
+
+#MovieList.movies-wrapper .chevrons-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0px;
+  height: 502px;
+  position: relative;
+  align-items: center;
+  top: -502px;
+}
+#MovieList.movies-wrapper .chevron-left { left: 0px; }
+#MovieList.movies-wrapper .chevron-right { right: 0px; }
+#MovieList.movies-wrapper .chevron-left,
+#MovieList.movies-wrapper .chevron-right {
+  z-index: 1;
+  cursor: pointer;
+  background: rgba(0,0,0,0.5);
+  height: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 65px;
+  top: 119px;
+}
+
+#MovieList.movies-wrapper .movie-list-wrapper {
+  display: flex;
+  width: 100%;
+  padding: 25px 50px 0;
+  z-index: 1;
+  position: relative;
+}
+
+#MovieList.movies-wrapper .movie-list-wrapper .movie-list {
+  display: flex;
+  justify-content: center;
+}
