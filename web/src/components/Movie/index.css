@@ -1,0 +1,39 @@
+.movie-list .selected {
+  border: 2px solid #fff;
+}
+
+.movie-list .selected::after {
+  content: ' ';
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  display: block;
+  position: relative;
+  margin-bottom: -15px;
+  transform: rotate(45deg);
+  left: 50%;
+  z-index: 1;
+  top: -6px;
+}
+
+#MovieList.movies-wrapper .movie-card .movie-rating {
+  display: flex;
+  padding: 6px;
+  background: linear-gradient(to bottom, #000 0%, #0000 100%);
+}
+
+#MovieList.movies-wrapper .movie-card .movie-rating .star > span {
+  position: relative;
+}
+
+#MovieList.movies-wrapper .movie-card .movie-rating span {
+  color: #000;
+  left: -27px;
+  position: relative;
+  display: block;
+  top: 11px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Raleway';
+  width: 17px;
+}
