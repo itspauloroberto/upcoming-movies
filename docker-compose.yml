@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+
+###############
+# Node.JS API #
+###############
+
+  server: 
+    build: ./api
+    expose: 
+      - ${API_PORT}
+    environment:
+      API_HOST: ${API_HOST}
+      API_PORT: ${API_PORT}
+    ports: 
+      - ${API_PORT}:${API_PORT}
+    volumes:
+      - ./api:/app/api
+    command: npm run start
+
+################
+# React.JS Web #
+################
+
+  client:
+    build: ./web
+    environment: 
+      - WEB_PORT=${WEB_PORT}
+    expose:
+      - ${WEB_PORT}
+    ports:
+      - ${WEB_PORT}:${WEB_PORT}
+    volumes:
+      - ./web/src:/app/web/src
+      - ./web/public:/app/web/public
+    links:
+      - server
+    command: npm run start
